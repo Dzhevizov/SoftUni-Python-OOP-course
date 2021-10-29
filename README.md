@@ -1,1 +1,1 @@
-# My homeworks during Python OOP course
+# My homeworks during SoftUni Python OOP course

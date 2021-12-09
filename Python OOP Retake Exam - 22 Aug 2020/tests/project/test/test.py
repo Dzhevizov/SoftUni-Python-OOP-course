@@ -41,9 +41,9 @@ class TestStudentReportCard(TestCase):
 
             self.assertEqual(expected, actual)
 
-    def test_init__when_school_year_is_equals_1_or__12__should_raise(self):
-        invalid_test_years = [1, 12]
-        for year in invalid_test_years:
+    def test_init__when_school_year_equals_1_or_12(self):
+        valid_test_years = [1, 12]
+        for year in valid_test_years:
             student = StudentReportCard(self.student_name, year)
             self.assertEqual(self.student_name, student.student_name)
             self.assertEqual(year, student.school_year)

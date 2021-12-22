@@ -36,7 +36,9 @@ class Controller:
             raise Exception('There are no drink supplies left!')
 
         supply = valid_supplies[-1]
+        self.supplies = self.supplies[-1::-1]
         self.supplies.remove(supply)
+        self.supplies = self.supplies[-1::-1]
         if player.stamina + supply.energy > 100:
             player.stamina = 100
         else:
